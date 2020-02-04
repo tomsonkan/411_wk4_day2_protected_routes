@@ -18,12 +18,14 @@ class App extends Component {
     this.setState(state)
   }
 
+  //Cookies are small bits of information that websites store on your browser. 
+  //They are key-value pairs like objects but they only contain text. They help 
+  //the browser make certain decisions using the content that's been stored in these cookies. 
   login = (e) => {
     e.preventDefault()
     // set cookie here
     document.cookie = `loggedIn=true;max-age=60*1000`
     // set loggedIn = true and max-age = 60*1000 (one minute)
-
     window.location.replace("/")
   }
 
